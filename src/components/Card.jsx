@@ -28,7 +28,7 @@ function Card(props) {
                 ? "Card-CardInfo-Container-Btn showBtn"
                 : "Card-CardInfo-Container-Btn"
             }
-            id="btn"
+            id={`${props.title}btn`}
             aria-label="time"
             onClick={handleClick}
           >
