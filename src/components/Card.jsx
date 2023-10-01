@@ -28,6 +28,8 @@ function Card(props) {
                 ? "Card-CardInfo-Container-Btn showBtn"
                 : "Card-CardInfo-Container-Btn"
             }
+            id="btn"
+            aria-label="time"
             onClick={handleClick}
           >
             <span></span>
