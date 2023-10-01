@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+:root {
+  --color-brand-1: hsl(236, 100%, 87%);
+  --color-brand-2: hsl(235, 45%, 61%);
+
+  --color-site-1: hsl(226, 43%, 10%);
+  --color-site-2: hsl(246, 80%, 60%);
+  --color-site-3: hsl(235, 46%, 20%);
+
+  --color-site-work: hsl(15, 100%, 70%);
+  --color-site-play: hsl(195, 74%, 62%);
+  --color-site-study: hsl(348, 100%, 68%);
+  --color-site-exercise: hsl(145, 58%, 55%);
+  --color-site-social: hsl(264, 64%, 52%);
+  --color-site-self-care: hsl(43, 84%, 65%);
+
+  --font-rubik: "Rubik", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-rubik);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-site-1);
+  padding: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  #root {
+    display: grid;
+    place-items: center;
+  }
+  main {
+    width: 100%;
+    max-width: 130rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .UserBox {
+    grid-area: 1/1/3/1;
+  }
+}
